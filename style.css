@@ -1,0 +1,120 @@
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 4rem;
+	padding: 0 2rem;
+	background-color: red;
+	color: white;
+}
+
+.navbar-logo {
+	width: 30px;
+}
+
+.navbar-menu {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar-menu a {
+	margin-left: 1em;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.navbar-menu a:hover {
+	color: rgb(167, 123, 123);
+	text-decoration: none;
+}
+
+/* .link-active {
+	color: rgb(235, 30, 30) !impor;
+} */
+
+/* JUMBOTRON  */
+.jumbotron {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 40vh;
+	background-color: rgb(235, 30, 30);
+	color: white;
+}
+
+/* Videos  Section */
+.videos-section {
+	padding: 1rem;
+}
+
+.videos-section > h3 {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.videos-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.videos-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.videos-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+/* Utilities */
+.button {
+	border: 1px solid rgb(235, 30, 30);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	padding: 0.5em 1em;
+	background-color: rgb(214, 4, 4);
+	color: white;
+	text-decoration: none;
+}
+
+.card {
+	/* border: 2px solid rgb(235, 30, 30); */
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+}
+
+.card-img {
+	width: 100%;
+}
+
+.card-title {
+	font-weight: bold;
+}
